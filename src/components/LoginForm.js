@@ -25,7 +25,7 @@ function LoginForm() {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      {errorMessage && errorMessage}
+      {errorMessage && <p id="errorMessage" >errorMessage</p>}
       <button onClick={handleSubmit}>Login</button>
     </div>
   );
